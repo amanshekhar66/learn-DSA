@@ -10,6 +10,6 @@ public class InvertedStar {
         }
     }
     public static void main(String[] args) {
-        InvertedStar_Pattern(6);
+        InvertedStar_Pattern(4);
     }
 }
