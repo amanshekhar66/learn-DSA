@@ -32,6 +32,6 @@ public class ButterflyPattern {
         }
     }
     public static void main(String[] args) {
-        Butterfly_Pattern(8);
+        Butterfly_Pattern(9);
     }
 }
