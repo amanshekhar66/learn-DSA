@@ -2,7 +2,6 @@ package Arrays.Assignment;
 
 public class DupElement {
     public static boolean DuplicateElement_Array(int arr[]){
-        int CheckElement = arr[0];
         int equals = 0;
         boolean duplicate = false;
 
