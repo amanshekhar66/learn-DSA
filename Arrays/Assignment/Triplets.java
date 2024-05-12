@@ -1,8 +1,6 @@
 package Arrays.Assignment;
 import java.util.*;
 
-
-
 public class Triplets {
      public static int TripletNo = 0;
      public static int TripletArr[] = new int[100];
@@ -10,21 +8,17 @@ public class Triplets {
      public static  int count = 0;
 
      public static void PrintTriplet(int FirstEl, int SecondEl, int ThirdEl){
-
         int TripletSubArr[] = new int[3];
         boolean DuplicateTriplet = false;
         int InitialCount;
         
-
         if(TripletNo!=0){
             TripletSubArr[0] = FirstEl;
             TripletSubArr[1] = SecondEl;
             TripletSubArr[2] = ThirdEl;
-
             Arrays.sort(TripletSubArr);
         }
- 
-
+          
         if(TripletNo==0){
             InitialCount = count;
             DuplicateTriplet = false;
@@ -66,10 +60,8 @@ public class Triplets {
         }
     }
 
-
     public static void GetTriplets(int arr[]) {
-       
-        
+         
         // Loop through the array to pick the first element of the triplet
         for (int i = 0; i < arr.length - 2; i++) {
             // Loop through the remaining elements to pick the second element of the triplet
@@ -81,15 +73,10 @@ public class Triplets {
                     if(i != j & j != k & k != i & (arr[i]+arr[j]+arr[k]) == 0){
                         PrintTriplet(arr[i],arr[j], arr[k]);
                     }
-                    
                 }
             }
         }
     }
-
-
-//         }
-    
     public static void main(String[] args) {
         int arr[] = {-1,0,1,2,-1,-4};
         GetTriplets(arr);
