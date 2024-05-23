@@ -1,4 +1,6 @@
+
 package Arrays.Assignment;
+import java.util.*;
 
 public class DupElement {
     public static boolean DuplicateElement_Array(int arr[]){
@@ -24,6 +26,7 @@ public class DupElement {
     }
     public static void main(String[] args) {
         int arr[] = {1,2,3,4};
+        Arrays.sort(arr);
         System.out.println(DuplicateElement_Array(arr));
     }
 }

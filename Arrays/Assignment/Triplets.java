@@ -1,8 +1,6 @@
 package Arrays.Assignment;
 import java.util.*;
 
-
-
 public class Triplets {
      public static int TripletNo = 0;
      public static int TripletArr[] = new int[100];
@@ -15,16 +13,13 @@ public class Triplets {
         boolean DuplicateTriplet = false;
         int InitialCount;
         
-
         if(TripletNo!=0){
             TripletSubArr[0] = FirstEl;
             TripletSubArr[1] = SecondEl;
             TripletSubArr[2] = ThirdEl;
-
             Arrays.sort(TripletSubArr);
         }
  
-
         if(TripletNo==0){
             InitialCount = count;
             DuplicateTriplet = false;
@@ -38,7 +33,7 @@ public class Triplets {
         }
         else{
             for(int i=0;i<count;i+=3){
-                if(TripletArr[i]==TripletSubArr[0] & TripletArr[i+1]== TripletSubArr[1] & TripletArr[i+2] == TripletSubArr[2]){
+                if(TripletArr[i]==TripletSubArr[0] & TripletArr[i+1]== TripletSubArr[1] & TripletArr[i+2] == TripletSubArr[2]){  
                     DuplicateTriplet = true;
                 }
             }
@@ -66,10 +61,8 @@ public class Triplets {
         }
     }
 
-
     public static void GetTriplets(int arr[]) {
        
-        
         // Loop through the array to pick the first element of the triplet
         for (int i = 0; i < arr.length - 2; i++) {
             // Loop through the remaining elements to pick the second element of the triplet
@@ -80,18 +73,13 @@ public class Triplets {
  
                     if(i != j & j != k & k != i & (arr[i]+arr[j]+arr[k]) == 0){
                         PrintTriplet(arr[i],arr[j], arr[k]);
-                    }
-                    
+                    }  
                 }
             }
         }
     }
-
-
-//         }
-    
-    public static void main(String[] args) {
-        int arr[] = {-1,0,1,2,-1,-4};
+        public static void main(String[] args) {
+        int arr[] = {-1,0,1,2,-1,-4,3,-2};
         GetTriplets(arr);
     }
 }
