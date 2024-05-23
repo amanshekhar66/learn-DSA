@@ -8,7 +8,6 @@ public class Triplets {
      public static  int count = 0;
 
      public static void PrintTriplet(int FirstEl, int SecondEl, int ThirdEl){
-
         int TripletSubArr[] = new int[3];
         boolean DuplicateTriplet = false;
         int InitialCount;
@@ -19,7 +18,11 @@ public class Triplets {
             TripletSubArr[2] = ThirdEl;
             Arrays.sort(TripletSubArr);
         }
+<<<<<<< HEAD
  
+=======
+          
+>>>>>>> eca7f69a9428db1b54ebdb68ec231c5d3b2e9ef5
         if(TripletNo==0){
             InitialCount = count;
             DuplicateTriplet = false;
@@ -62,7 +65,11 @@ public class Triplets {
     }
 
     public static void GetTriplets(int arr[]) {
+<<<<<<< HEAD
        
+=======
+         
+>>>>>>> eca7f69a9428db1b54ebdb68ec231c5d3b2e9ef5
         // Loop through the array to pick the first element of the triplet
         for (int i = 0; i < arr.length - 2; i++) {
             // Loop through the remaining elements to pick the second element of the triplet
@@ -73,13 +80,22 @@ public class Triplets {
  
                     if(i != j & j != k & k != i & (arr[i]+arr[j]+arr[k]) == 0){
                         PrintTriplet(arr[i],arr[j], arr[k]);
+<<<<<<< HEAD
                     }  
+=======
+                    }
+>>>>>>> eca7f69a9428db1b54ebdb68ec231c5d3b2e9ef5
                 }
             }
         }
     }
+<<<<<<< HEAD
         public static void main(String[] args) {
         int arr[] = {-1,0,1,2,-1,-4,3,-2};
+=======
+    public static void main(String[] args) {
+        int arr[] = {-1,0,1,2,-1,-4};
+>>>>>>> eca7f69a9428db1b54ebdb68ec231c5d3b2e9ef5
         GetTriplets(arr);
     }
 }
