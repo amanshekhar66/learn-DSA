@@ -11,7 +11,7 @@ public class SearchInMatrix {
                     System.out.println("Found at (" + i + "," + j + ")");
                     break;
                 }
-            }
+            }   
             if(found){
                 break;
             }        }
