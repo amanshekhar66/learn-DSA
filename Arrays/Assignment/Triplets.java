@@ -1,4 +1,4 @@
-package Arrays.Assignment;
+//package Arrays.Assignment;
 import java.util.*;
 
 public class Triplets {
