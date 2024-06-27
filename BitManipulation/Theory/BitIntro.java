@@ -33,14 +33,14 @@ public class BitIntro {
         LEFT SHIFT OPERATOR (<<)
         a<<b = a * Math.pow(2,b)
         Suppose a = 0000110 and b = 2,
-        a<<b => means that we have to shift all the bits of a towards the left by two places and fill the 
+        a<<b => means that we have to shift all the bits of a number towards the left by two places and fill the 
                 two place gap present in the right by zero
         => a<<b = 0011000
 
         RIGHT SHIFT OPERATOR (<<)
         a>>b = a / Math.pow(2,b)
         Suppose a = 0000110 and b = 2,
-        a>>b => means that we have to shift all the bits of a towards the right by two places and fill the 
+        a>>b => means that we have to shift all the bits of a number towards the right by two places and fill the 
                 two place gap present in the left by zero
         => a>>b = 0000001
 
